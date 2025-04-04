@@ -164,7 +164,8 @@ body {
 
 // Text elements
 .betting-text {
-  display: column;
+  display: flex;
+  flex-direction: column;
   
   @media (max-width: $mobile-breakpoint) {
     margin: 0;
