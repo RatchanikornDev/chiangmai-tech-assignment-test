@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS compiled from SCSS -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <!-- Banner Section -->
+    <header class="banner">
+      <div class="banner__container container"></div>
+
+      <!-- Three column layout -->
+      <div class="main-layout">
+        <!-- Left Column -->
+        <div class="left-column"></div>
+
+        <!-- Middle Column with 3 rows -->
+        <div class="middle-column">
+          <div class="middle-row1">
+            <img
+              class="betting-list__image"
+              src="/asset/Rectangle 671.png"
+              alt="Football"
+            />
+          </div>
+
+          <div class="middle-row2">
+            <div class="betting-text">
+              <div class="section-text">
+                <span class="text-sample1"
+                  >Manchester United <a class="text-sample2">2</a></span
+                >
+                <span class="text-sample1"
+                  >Liverpool <a class="text-sample2">2</a></span
+                >
+              </div>
+              <div class="section-text">
+                <span class="text-sample1">
+                  <a class="text-sample3"> +120 </a>It/ Item/ Information</span
+                >
+              </div>
+            </div>
+
+            <div class="betting-buttons">
+              <!-- A button -->
+              <input type="radio" id="btn-a" name="bet" class="hidden-radio" />
+              <label for="btn-a" class="bet-button-label">
+                <div class="custom-button">
+                  <span class="label">A</span>
+                  <span class="corner-plus"></span>
+                </div>
+              </label>
+
+              <!--  B button -->
+              <input type="radio" id="btn-b" name="bet" class="hidden-radio" />
+              <label for="btn-b" class="bet-button-label">
+                <div class="custom-button">
+                  <span class="label">B</span>
+                </div>
+              </label>
+
+              <!-- C button -->
+              <input
+                type="radio"
+                id="btn-c"
+                name="bet"
+                class="hidden-radio"
+                checked
+              />
+              <label for="btn-c" class="bet-button-label">
+                <div class="custom-button">
+                  <span class="label">C</span>
+                  <span class="corner"></span>
+                </div>
+              </label>
+            </div>
+
+            <!-- Button column -->
+            <div class="column-container">
+              <div class="betting-buttons">
+                <button class="custom-button">
+                  <span class="label">A</span>
+                  <span class="corner-minus"></span>
+                </button>
+
+                <button class="custom-button-par">
+                  <span class="label">par</span>
+                </button>
+
+                <button class="custom-button">
+                  <span class="label">B</span>
+                </button>
+
+                <button class="custom-button">
+                  <span class="label">Par <br />A</span>
+                </button>
+                <button class="custom-button">
+                  <span class="label">Par <br />B</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Favorit -->
+
+            <button class="custom-button-star">
+              <span class="label">
+                <input
+                  type="checkbox"
+                  id="favorite-toggle"
+                  class="favorite-checkbox"
+                />
+                <label for="favorite-toggle" class="favorite-label">
+                  <svg
+                    class="favorite-icon outline"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="gray"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21L12 17.77L5.82 21L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="favorite-icon filled"
+                    viewBox="0 0 24 24"
+                    fill="gold"
+                  >
+                    <path
+                      d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21L12 17.77L5.82 21L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                    ></path>
+                  </svg>
+                </label>
+              </span>
+              <span class="icon"></span>
+            </button>
+          </div>
+
+          <div class="middle-row3"></div>
+        </div>
+
+        <!-- Right Column (Empty) -->
+        <div class="right-column"></div>
+      </div>
+    </header>
+  </body>
+</html>
