@@ -1,4 +1,4 @@
-# Betting System UI  
+# chiangmai-tech-assignment-test
 
 ##  About the Project  
 Demo : https://chiangmai-tech-assignment-test.vercel.app/ 
