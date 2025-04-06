@@ -326,8 +326,6 @@ body {
 
 .custom-button-star {
   position: relative;
-  width: 100px;
-  height: 100px;
   border: 0;
   margin: 0;
   padding: 0;
@@ -336,7 +334,6 @@ body {
 }
 @media (max-width: 667px) {
   .custom-button-star {
-    width: 70px;
     height: 70%;
   }
 }
@@ -354,7 +351,7 @@ body {
 
 .favorite-label {
   box-shadow: none;
-  width: 100px;
+  width: 50px;
   height: 100px;
   background-color: #3498db;
   border: none;
@@ -369,7 +366,7 @@ body {
 }
 @media (max-width: 667px) {
   .favorite-label {
-    width: 50px;
+    width: 20px;
     height: 48px;
     font-size: 20px;
   }
