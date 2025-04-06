@@ -164,8 +164,8 @@ body {
 
 // Text elements
 .betting-text {
-  display: flex;
-  flex-direction: column;
+  display: float;
+
   
   @media (max-width: $mobile-breakpoint) {
     margin: 0;
@@ -216,7 +216,10 @@ body {
 }
 
 .text-sample1 {
-  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  flex-direction: row;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

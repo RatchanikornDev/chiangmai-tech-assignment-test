@@ -42,7 +42,6 @@ body {
   align-items: center;
 }
 
-/* Main container with 3-column grid */
 .main-layout {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -56,7 +55,6 @@ body {
   }
 }
 
-/* Left column */
 .left-column {
   background-color: #1c2b4a;
   padding: 16px;
@@ -68,7 +66,6 @@ body {
   }
 }
 
-/* Middle column with 3 rows */
 .middle-column {
   display: flex;
   flex-direction: column;
@@ -99,16 +96,14 @@ body {
   background-color: #1c2b4a;
   padding: 16px 8px;
   display: flex;
-  grid-template-columns: auto;
   gap: 16px;
 }
 @media (max-width: 667px) {
   .middle-row2 {
-    flex-direction: flex;
     width: 100%;
     max-width: 100vw;
-    box-sizing: grid;
-    margin-bottom: 0%;
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 }
 
@@ -130,26 +125,19 @@ body {
 }
 
 .betting-list__image {
-  max-width: 100vw;
-  box-sizing: border-box;
   width: 100%;
   height: auto;
-}
-@media (max-width: 667px) {
-  .betting-list__image {
-    width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
-  }
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .betting-text {
-  display: column;
+  display: float;
 }
 @media (max-width: 667px) {
   .betting-text {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
     font-size: 15px;
     white-space: nowrap;
     overflow: hidden;
@@ -163,6 +151,7 @@ body {
   gap: 16px;
   border: none;
 }
+
 @media (max-width: 667px) {
   .column-container {
     display: none;
@@ -196,7 +185,10 @@ body {
 }
 
 .text-sample1 {
-  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  flex-direction: row;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -266,7 +258,7 @@ body {
   font-weight: bold;
   color: #666666;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
 }
 @media (max-width: 667px) {
@@ -277,7 +269,7 @@ body {
   }
 }
 .custom-button:hover {
-  background-color: #1d3557;
+  background-color: rgb(29.2970711297, 110.6778242678, 165.2029288703);
 }
 .custom-button .label {
   position: relative;
@@ -366,8 +358,7 @@ body {
   height: 100px;
   background-color: #3498db;
   border: none;
-  margin: none;
-  display: inline-block;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,7 +366,6 @@ body {
   font-weight: bold;
   color: #666666;
   cursor: pointer;
-  box-shadow: none;
 }
 @media (max-width: 667px) {
   .favorite-label {
@@ -385,7 +375,7 @@ body {
   }
 }
 .favorite-label:hover {
-  background-color: #1d3557;
+  background-color: rgb(29.2970711297, 110.6778242678, 165.2029288703);
   border: none;
 }
 .favorite-label .filled {
@@ -401,7 +391,6 @@ body {
   border: none;
 }
 
-/* Right column (empty) */
 .right-column {
   background-color: #1c2b4a;
   padding: 16px;
